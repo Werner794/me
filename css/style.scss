@@ -9,16 +9,32 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px 0;
+    padding: 0 100px;
 }
+
+@media (max-width:768px) {
+    .header__nav{
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+}
+
+
 .header__logo {
 }
 .header__nav-list {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     list-style-type: none;
 }
+
+@media (max-width:786px){
+    .header__nav-list{
+        flex-wrap: wrap;
+    }
+}
+
 .nav-list__item {
 }
 .nav-list__link {
@@ -52,6 +68,16 @@ body{
     gap: 20px;
     font-size: 20px;
 }
+
+@media(max-width:600px){
+    .hero__content{
+        flex-direction: column;
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+
 .hero__icon {
     border-radius: 50%;
     object-fit: cover;
@@ -97,26 +123,46 @@ body{
 
 .interests {
     display: flex;
-    justify-content: space-between;
     padding: 30px 100px 0px 100px;
     background-color: rgb(9, 20, 31);
     color: white;
 }
+
+@media(max-width:786px){
+    .interests{
+        flex-direction: column;
+        padding: 10px 70px 0px 70px;
+    }
+}
+
 .interests__title {
     width: 30%;
     font-size: 30px;
 }
+
+@media(max-width:786px){
+    .interests__title{
+        width: 100%;
+    }
+}
+
 .interests__list {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    align-items: center;
     width: 70%;
 }
+@media(max-width:786px){
+    .interests__list{
+        width: 100%;
+    }
+}
+
 .interests__card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     width: 15%;
 }
 .interests__card-logo {
@@ -133,7 +179,7 @@ body{
 
 
 .games {
-    padding: 30px 100px 30px 100px;
+    padding: 30px 100px;
     background-color: rgb(9, 20, 31);
 }
 .games__title {
@@ -143,8 +189,16 @@ body{
 .games__list {
     display: flex;
     justify-content: space-between;
-
 }
+@media(max-width:786px){
+    .games__list{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
 .games__card--title{
     color: rgb(255, 255, 255);
     font-style: italic;
@@ -170,18 +224,24 @@ body{
         border: 2px solid white;
     }
 }
+@media(max-width:786px){
+    .games__card{
+        width: 100%;
+        height: 150px;
+    }
+}
 
 .games__card-wow{
-    background-image: url(/img/wow-img.webp);
+    background-image: url(../img/wow-img.webp);
 }
 .games__card-witcher{
-    background-image: url(/img/witcher-img.png);
+    background-image: url(../img/witcher-img.png);
 }
 .games__card-baldur{
-    background-image: url(/img/baldurs-img.png);
+    background-image: url(../img/baldurs-img.png);
 }
 .games__card-mass{
-    background-image: url(/img/mass-img.png);
+    background-image: url(../img/mass-img.png);
 }
 
 //////////////////////////////////////////
@@ -196,6 +256,15 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+@media(max-width:670px){
+    .footer{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+
 .footer__quote {
     color: grey;
     font-style: italic;
@@ -207,6 +276,12 @@ body{
     align-items: center;
     gap: 50px;
 }
+@media(max-width:786px){
+    .footer__media{
+        gap: 25px;
+    }
+}
+
 .footer__link {
 }
 .footer__img {
